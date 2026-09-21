@@ -1,0 +1,40 @@
+{
+  "_note": "Illustrative only -- shows the shape rows.json should take and what a humanized, gap-filled entry looks like. Not a default to reuse verbatim; every real run's descriptions must come from that run's actual commit evidence.",
+  "author": "Jane Doe",
+  "period_start": "2026-08-04",
+  "period_end": "2026-08-07",
+  "rows": [
+    {
+      "date": "2026-08-04",
+      "weekday": "Tuesday",
+      "project": "example-service",
+      "status": "Working",
+      "hours": 8,
+      "description": "Started rebuilding the ingest pipeline to handle larger documents without loading the whole file into memory."
+    },
+    {
+      "date": "2026-08-05",
+      "weekday": "Wednesday",
+      "project": "example-service",
+      "status": "Working",
+      "hours": 8,
+      "description": "Kept working on the streaming ingest changes and ran into a chunking bug where overlapping sections got duplicated."
+    },
+    {
+      "date": "2026-08-06",
+      "weekday": "Thursday",
+      "project": "example-service",
+      "status": "Working",
+      "hours": 8,
+      "description": "Fixed the duplicate chunk issue, cleaned up the verification step, and pushed the whole streaming ingest change."
+    },
+    {
+      "date": "2026-08-07",
+      "weekday": "Friday",
+      "project": "example-service",
+      "status": "Leave",
+      "hours": 0,
+      "description": "On leave."
+    }
+  ]
+}

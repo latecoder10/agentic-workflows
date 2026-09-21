@@ -14,6 +14,19 @@
       "addedBy": "claude-code",
       "status": "verified",
       "verification": "Built and validated end-to-end on a real 3.5-minute product demo video; automated verify_video.js confirmed 0.015s video/audio duration delta and a 1.03s max silence gap (well under the 2s threshold)."
+    },
+    {
+      "id": "git-timesheet",
+      "name": "Git Timesheet",
+      "summary": "Reconstructs a day-by-day timesheet from git commit history across one or more local repos for a given date range, intelligently filling the gap days between sparse commits and writing plain, humanized, non-AI-sounding descriptions grounded in the actual diffs.",
+      "path": "workflows/git-timesheet",
+      "entry": "workflows/git-timesheet/README.md",
+      "tags": ["git", "timesheet", "reporting", "python", "commit-history"],
+      "requires": ["git", "python3", "openpyxl"],
+      "agentAgnostic": true,
+      "addedBy": "claude-code",
+      "status": "verified",
+      "verification": "Ran end-to-end against 4 real local repos (up to 44 commits each). Caught and fixed a real bug where git log --since/--until filters on committer date, not author date -- 34 of 43 commits in one repo had a rewritten committer date and were silently misplaced/dropped before the fix. Confirmed gap-day neighbor detection, multi-alias author filtering (3 identities for one person in one repo), binary-file numstat parsing (26 binary entries across repos), and character/AI-phrasing sanitization all work against real data."
     }
   ]
 }
