@@ -1,0 +1,11 @@
+node_modules/
+.env
+.env.local
+*.log
+.DS_Store
+Thumbs.db
+
+# Workflows generate their working data in the *consuming* project, not here -
+# but ignore it defensively in case a workflow is ever test-run in place.
+/**/demo-narration/in/
+/**/demo-narration/out/

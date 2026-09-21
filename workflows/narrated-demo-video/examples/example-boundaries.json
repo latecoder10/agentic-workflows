@@ -1,0 +1,4 @@
+{
+  "_comment": "Illustrative only - matches example-narration.txt's 5 scenes. naturalStarts[i] is where scene i's footage begins in the SOURCE video (verified with probe_boundary.js, not guessed from a coarse grid). The array has exactly one entry per scene, in the same order as the narration script.",
+  "naturalStarts": [0, 6.0, 14.5, 24.0, 33.5]
+}

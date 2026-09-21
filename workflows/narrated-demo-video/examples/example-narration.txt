@@ -1,0 +1,24 @@
+# Illustrative example only - narration content is always project-specific
+# and should be written fresh from what the scene-review subagent actually
+# saw on screen. This shows the FORMAT and the kind of scene-sized chunking
+# to aim for, not content to reuse.
+#
+# The bracketed number is a nominal cue time (roughly where this beat starts
+# in the SOURCE video) - it's for human reference and to keep segments in
+# order. It is NOT used as an exact playback timestamp; real timing comes
+# from synthesize_narration.js's TTS alignment.
+
+[0.0]
+This is Acme Analytics, a live dashboard for tracking support ticket volume across every team.
+
+[6.0]
+On the Tickets tab, we filter by priority and instantly see the backlog reshuffle - no page reload, no spinner.
+
+[14.5]
+Click into a single ticket and the full thread loads: every reply, every internal note, every status change, in order.
+
+[24.0]
+Behind the scenes, a webhook fires the moment a ticket's priority changes, so on-call engineers get paged automatically instead of finding out an hour later.
+
+[33.5]
+And it's all exportable - one click produces a CSV any BI tool can ingest directly.

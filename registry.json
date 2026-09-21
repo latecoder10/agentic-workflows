@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Machine-readable index of workflows in this registry. Each entry points at a self-contained directory under workflows/ with its own README.md (full instructions), AGENTS.md (short pointer for auto-loading agent tools), scripts/, and references/.",
+  "workflows": [
+    {
+      "id": "narrated-demo-video",
+      "name": "Narrated Demo Video",
+      "summary": "Adds a single continuous, precisely-synced AI voiceover to a silent screen-recording demo video by rebuilding the video's timing to match the narration (trim/freeze-extend per scene) instead of forcing narration into fixed video cues.",
+      "path": "workflows/narrated-demo-video",
+      "entry": "workflows/narrated-demo-video/README.md",
+      "tags": ["video", "audio", "ffmpeg", "elevenlabs", "tts", "voiceover", "demo-video", "presentation"],
+      "requires": ["node", "ffmpeg", "ffprobe", "elevenlabs-api-key"],
+      "agentAgnostic": true,
+      "addedBy": "claude-code",
+      "status": "verified",
+      "verification": "Built and validated end-to-end on a real 3.5-minute product demo video; automated verify_video.js confirmed 0.015s video/audio duration delta and a 1.03s max silence gap (well under the 2s threshold)."
+    }
+  ]
+}
