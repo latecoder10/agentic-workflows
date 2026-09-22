@@ -56,6 +56,7 @@ workflows you're not using right now. Each workflow also has its own scoped
 |---|---|---|
 | [`narrated-demo-video`](workflows/narrated-demo-video) | Adds a single continuous, precisely-synced AI voiceover to a silent screen-recording, rebuilding the video's timing to match the narration instead of forcing narration into fixed cues. | video, ffmpeg, elevenlabs, voiceover |
 | [`git-timesheet`](workflows/git-timesheet) | Reconstructs a day-by-day timesheet from git commit history across one or more repos, filling gap days between sparse commits with humanized, evidence-grounded descriptions. | git, timesheet, reporting, python |
+| [`daily-standup`](workflows/daily-standup) | Reconstructs a concise, 3-part daily standup (Yesterday, Today, Blockers) from git activity across one or more repos, grounding today's work in working tree diffs and stashes. | git, standup, daily, scrum, python |
 
 (Also see `registry.json` for the machine-readable version of this table.)
 

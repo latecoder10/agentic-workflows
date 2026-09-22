@@ -1,0 +1,150 @@
+{
+  "generated_at": "2026-09-22T09:15:00.000000",
+  "period": {
+    "since": "2026-09-21",
+    "until": "2026-09-22",
+    "is_monday_lookback": false
+  },
+  "authors_filtered": [
+    "Alex Rivera",
+    "alex.rivera@example.com"
+  ],
+  "warnings": [],
+  "repo_count": 2,
+  "repos": [
+    {
+      "name": "core-api",
+      "path": "/workspace/core-api",
+      "current_branch": "feat/webhook-retry",
+      "commits_in_window": 2,
+      "commits": [
+        {
+          "hash": "4a71c8901234567890abcdef1234567890abcdef",
+          "author_date": "2026-09-21",
+          "committer_date": "2026-09-21",
+          "author_name": "Alex Rivera",
+          "author_email": "alex.rivera@example.com",
+          "subject": "Add exponential backoff queue for webhook dispatch",
+          "files_changed": 3,
+          "insertions": 142,
+          "deletions": 18,
+          "files": [
+            {
+              "path": "src/webhooks/dispatcher.py",
+              "insertions": 94,
+              "deletions": 12,
+              "binary": false
+            },
+            {
+              "path": "src/webhooks/retry.py",
+              "insertions": 38,
+              "deletions": 6,
+              "binary": false
+            },
+            {
+              "path": "tests/test_webhook_retry.py",
+              "insertions": 10,
+              "deletions": 0,
+              "binary": false
+            }
+          ]
+        },
+        {
+          "hash": "8b92e101234567890abcdef1234567890abcdef1",
+          "author_date": "2026-09-21",
+          "committer_date": "2026-09-21",
+          "author_name": "Alex Rivera",
+          "author_email": "alex.rivera@example.com",
+          "subject": "Handle idempotency keys during webhook replay",
+          "files_changed": 2,
+          "insertions": 65,
+          "deletions": 4,
+          "files": [
+            {
+              "path": "src/webhooks/dispatcher.py",
+              "insertions": 45,
+              "deletions": 4,
+              "binary": false
+            },
+            {
+              "path": "tests/test_idempotency.py",
+              "insertions": 20,
+              "deletions": 0,
+              "binary": false
+            }
+          ]
+        }
+      ],
+      "working_tree": {
+        "staged_files": [
+          {
+            "path": "tests/test_webhook_retry.py",
+            "status": "M"
+          }
+        ],
+        "unstaged_files": [
+          {
+            "path": "src/webhooks/metrics.py",
+            "status": "M"
+          }
+        ],
+        "untracked_files": [],
+        "staged_diffstat": "1 file changed, 18 insertions(+)",
+        "unstaged_diffstat": "1 file changed, 24 insertions(+), 5 deletions(-)",
+        "is_dirty": true
+      },
+      "stashes": [],
+      "unpushed_commits": {
+        "has_upstream": true,
+        "upstream_branch": "origin/feat/webhook-retry",
+        "commits": [
+          {
+            "hash": "8b92e10",
+            "subject": "Handle idempotency keys during webhook replay"
+          }
+        ],
+        "unpushed_count": 1
+      },
+      "top_components_touched": [
+        "src",
+        "tests"
+      ]
+    },
+    {
+      "name": "web-dashboard",
+      "path": "/workspace/web-dashboard",
+      "current_branch": "fix/delivery-status-badge",
+      "commits_in_window": 0,
+      "commits": [],
+      "working_tree": {
+        "staged_files": [],
+        "unstaged_files": [
+          {
+            "path": "src/components/WebhookBadge.tsx",
+            "status": "M"
+          }
+        ],
+        "untracked_files": [],
+        "staged_diffstat": "",
+        "unstaged_diffstat": "1 file changed, 8 insertions(+), 3 deletions(-)",
+        "is_dirty": true
+      },
+      "stashes": [
+        {
+          "id": "stash@{0}",
+          "context": "On main",
+          "description": "WIP on filter dropdown refactor"
+        }
+      ],
+      "unpushed_commits": {
+        "has_upstream": false,
+        "upstream_branch": null,
+        "commits": [],
+        "unpushed_count": 0
+      },
+      "top_components_touched": [
+        "src"
+      ]
+    }
+  ]
+}

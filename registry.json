@@ -27,6 +27,19 @@
       "addedBy": "claude-code",
       "status": "verified",
       "verification": "Ran end-to-end against 4 real local repos (up to 44 commits each). Caught and fixed a real bug where git log --since/--until filters on committer date, not author date -- 34 of 43 commits in one repo had a rewritten committer date and were silently misplaced/dropped before the fix. Confirmed gap-day neighbor detection, multi-alias author filtering (3 identities for one person in one repo), binary-file numstat parsing (26 binary entries across repos), and character/AI-phrasing sanitization all work against real data."
+    },
+    {
+      "id": "daily-standup",
+      "name": "Daily Standup",
+      "summary": "Reconstructs an accurate, concise 3-part daily standup (Yesterday, Today, Blockers) from local git activity across one or more repos, grounding today's work in working tree diffs and stashes while enforcing brevity and stripping AI corporate puffery.",
+      "path": "workflows/daily-standup",
+      "entry": "workflows/daily-standup/README.md",
+      "tags": ["git", "standup", "daily", "scrum", "agile", "reporting", "python", "developer-tools"],
+      "requires": ["git", "python3"],
+      "agentAgnostic": true,
+      "addedBy": "antigravity",
+      "status": "verified",
+      "verification": "Validated end-to-end against local git repos and multi-repo test scenarios. Verified automatic Monday 3-day lookback logic, working tree diffstat parsing, stash discovery, cross-platform UTF-8 console output, and deterministic linter rejection of verbose bullets and banned AI clichés."
     }
   ]
 }
